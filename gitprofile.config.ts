@@ -49,9 +49,9 @@ const CONFIG = {
     // },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: 'Portfolio of Alejandro Gómez',
     description: '',
-    imageURL: '',
+    imageURL: ' ',
   },
   social: {
     linkedin: 'Alejandro Gómez',
