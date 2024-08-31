@@ -54,7 +54,7 @@ const CONFIG = {
     imageURL: ' ',
   },
   social: {
-    linkedin: 'Alejandro Gómez',
+    linkedin: 'alejandro-gómez',
     researchGate: '',
     dev: '',
     stackoverflow: '', // example: '1/jeff-atwood'
