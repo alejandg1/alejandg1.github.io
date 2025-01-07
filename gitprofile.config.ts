@@ -2,11 +2,6 @@ const CONFIG = {
   github: {
     username: 'alejandg1',
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
   base: '/',
   projects: {
     github: {
@@ -15,14 +10,14 @@ const CONFIG = {
       mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        limit: 20, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
-        projects: ['alejandg1/Proyect_Unemi', 'alejandg1/SmartCook'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['alejandg1/Proyect_Unemi', 'alejandg1/SmartCook', 'alejandg1/Music_client', 'alejandg1/Coki'],
       },
     },
     // external: {
@@ -37,60 +32,46 @@ const CONFIG = {
     //         'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
     //       link: 'https://example.com',
     //     },
-    //     {
-    //       title: 'Project Name',
-    //       description:
-    //         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-    //       imageUrl:
-    //         'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-    //       link: 'https://example.com',
-    //     },
     //   ],
     // },
   },
   seo: {
-    title: 'Portfolio of Alejandro Gómez',
+    title: 'Alejandro Gómez',
     description: '',
     imageURL: ' ',
   },
   social: {
     linkedin: 'alejandro-gómez',
     researchGate: '',
-    dev: '',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    website: '',
-    phone: '',
+    stackoverflow: '',
     email: 'agomezp2003@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      ''
   },
   skills: [
     'Linux',
-    'JavaScript',
+    'React Native',
     'Node.js',
     'SQL',
-    'PostgreSQL',
     'Git',
     'Docker',
     'Golang',
     'Python',
-    'Go Cobra'
   ],
   experiences: [
+    {
+      event: 'Hackathon',
+      role: 'Participante',
+      year: '2024',
+      organization: 'UNEMI',
+    }
     // {
     //   company: 'Company Name',
     //   position: 'Position',
     //   from: 'September 2021',
     //   to: 'Present',
-    //   companyLink: 'https://example.com',
-    // },
-    // {
-    //   company: 'Company Name',
-    //   position: 'Position',
-    //   from: 'July 2019',
-    //   to: 'August 2021',
     //   companyLink: 'https://example.com',
     // },
   ],
