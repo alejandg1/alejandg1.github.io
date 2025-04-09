@@ -54,6 +54,7 @@ const CONFIG = {
     'Linux',
     'React Native',
     'Node.js',
+    'web deployment',
     'SQL',
     'Git',
     'Docker',
