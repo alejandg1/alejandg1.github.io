@@ -77,12 +77,12 @@ const CONFIG = {
     // },
   ],
   certifications: [
-    // {
-    //   name: 'Lorem ipsum',
-    //   body: 'Lorem ipsum dolor sit amet',
-    //   year: 'March 2022',
-    //   link: 'https://example.com',
-    // },
+    {
+      name: 'AWS Academy Introduction to Cloud Semester 1',
+      body: '',
+      year: '2024',
+      link: 'https://www.credly.com/badges/ab9d8696-7c9c-4da9-bdcd-60fc8d731bbf/public_url',
+    },
   ],
   educations: [
     {
