@@ -82,6 +82,7 @@ export interface SanitizedCertification {
   name?: string;
   year?: string;
   link?: string;
+  image?: string;
 }
 
 export interface SanitizedEducation {

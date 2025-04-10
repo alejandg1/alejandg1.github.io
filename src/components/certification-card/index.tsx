@@ -7,11 +7,13 @@ const ListItem = ({
   name,
   body,
   link,
+  image,
 }: {
   year?: React.ReactNode;
   name?: React.ReactNode;
   body?: React.ReactNode;
   link?: string;
+  image?: string;
 }) => (
   <li className="mb-5 ml-4">
     <div
@@ -20,6 +22,13 @@ const ListItem = ({
     ></div>
     <div className="my-0.5 text-xs">{year}</div>
     <div className="font-medium">
+        {image && (
+        <img
+          src={image}
+          alt="Certification Icon"
+          className="w-28 h-28 mr-4 object-contain"
+        />
+      )}
       <a href={link} target="_blank" rel="noreferrer">
         {name}
       </a>
@@ -85,6 +94,7 @@ const CertificationCard = ({
                     name={certification.name}
                     body={certification.body}
                     link={certification.link}
+                    image={certification.image}
                   />
                 ))}
               </>
