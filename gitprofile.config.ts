@@ -63,10 +63,16 @@ const CONFIG = {
   ],
   experiences: [
     {
-      event: 'Hackathon',
+      event: 'Hackathon - Tech for Green',
       role: 'Participante',
       year: '2024',
       organization: 'UNEMI',
+    },
+    {
+      event: 'Hackathon - Road to Hack',
+      role: 'Participante',
+      year: '2025',
+      organization: 'ESPOL',
     }
     // {
     //   company: 'Company Name',
@@ -82,7 +88,7 @@ const CONFIG = {
       body: '',
       year: '2024',
       link: 'https://www.credly.com/badges/ab9d8696-7c9c-4da9-bdcd-60fc8d731bbf/public_url',
-      image: './images/aws-academy-graduate-aws-academy-introduction-to-cloud-semester-1.png'
+      image: '/images/aws-academy-graduate-aws-academy-introduction-to-cloud-semester-1.png'
     },
   ],
   educations: [
