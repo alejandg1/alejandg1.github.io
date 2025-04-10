@@ -42,13 +42,11 @@ const CONFIG = {
   },
   social: {
     linkedin: 'alejandro-gómez',
-    researchGate: '',
-    stackoverflow: '',
     email: 'agomezp2003@gmail.com',
   },
   resume: {
     fileUrl:
-      ''
+      'https://drive.google.com/file/d/1FQ6uiClmRa_YTgtQmwh6hlAWp0PjJRKe/view?usp=sharing'
   },
   skills: [
     'Linux',
