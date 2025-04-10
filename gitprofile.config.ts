@@ -93,7 +93,7 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'State University of Milagro',
+      institution: 'State University of Milagro (software engineering)',
       degree: 'Not degree',
       from: '2019',
       to: '',
