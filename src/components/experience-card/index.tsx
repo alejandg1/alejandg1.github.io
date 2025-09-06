@@ -7,26 +7,64 @@ const ListItem = ({
   position,
   company,
   companyLink,
+  event,
+  role,
+  organization,
+  year
 }: {
   time: React.ReactNode;
   position?: React.ReactNode;
   company?: React.ReactNode;
   companyLink?: string;
-}) => (
-  <li className="mb-5 ml-4">
-    <div
-      className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-1.5"
-      style={{ left: '-4.5px' }}
-    ></div>
-    <div className="my-0.5 text-xs">{time}</div>
-    <h3 className="font-semibold">{position}</h3>
-    <div className="mb-4 font-normal">
-      <a href={companyLink} target="_blank" rel="noreferrer">
-        {company}
-      </a>
-    </div>
-  </li>
-);
+  event?: React.ReactNode;
+  role?: React.ReactNode;
+  organization?: React.ReactNode;
+  year?: React.ReactNode;
+}) => {
+  // Determinar si es un evento o una experiencia laboral tradicional
+  const isEvent = event && !position;
+  const title = isEvent ? event : position;
+  const subtitle = isEvent ? role : company;
+  const timeDisplay = isEvent ? year : time;
+  const organizationDisplay = isEvent ? organization : null;
+
+  return (
+    <li className="mb-5 ml-4">
+      <div
+        className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-1.5"
+        style={{ left: '-4.5px' }}
+      ></div>
+      <div className="my-0.5 text-xs">{timeDisplay}</div>
+      <h3 className="font-semibold">{title}</h3>
+      <div className="mb-1 font-normal">
+        {isEvent ? (
+          <span className="text-sm">{subtitle}</span>
+        ) : (
+          <a href={companyLink} target="_blank" rel="noreferrer">
+            {subtitle}
+          </a>
+        )}
+      </div>
+      {organizationDisplay && (
+        <div className="mb-4 font-normal text-sm opacity-70">
+          {companyLink ? (
+            <a 
+              href={companyLink} 
+              target="_blank" 
+              rel="noreferrer"
+              className="text-primary hover:underline"
+            >
+              {organizationDisplay}
+            </a>
+          ) : (
+            organizationDisplay
+          )}
+        </div>
+      )}
+      {!isEvent && !organizationDisplay && <div className="mb-4"></div>}
+    </li>
+  );
+};
 
 const ExperienceCard = ({
   experiences,
@@ -78,14 +116,14 @@ const ExperienceCard = ({
                 {experiences.map((experience, index) => (
                   <ListItem
                     key={index}
-                    time={`${experience.from} - ${experience.to}`}
+                    time={experience.from && experience.to ? `${experience.from} - ${experience.to}` : ''}
                     position={experience.position}
                     company={experience.company}
-                    companyLink={
-                      experience.companyLink
-                        ? experience.companyLink
-                        : undefined
-                    }
+                    companyLink={experience.companyLink}
+                    event={experience.event}
+                    role={experience.role}
+                    organization={experience.organization}
+                    year={experience.year}
                   />
                 ))}
               </Fragment>

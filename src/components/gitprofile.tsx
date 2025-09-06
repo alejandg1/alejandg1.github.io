@@ -21,6 +21,7 @@ import AvatarCard from './avatar-card';
 import { Profile } from '../interfaces/profile';
 import DetailsCard from './details-card';
 import SkillCard from './skill-card';
+import LanguageCard from './language-card';
 import ExperienceCard from './experience-card';
 import EducationCard from './education-card';
 import CertificationCard from './certification-card';
@@ -224,6 +225,18 @@ const GitProfile = ({ config }: { config: Config }) => {
                         skills={sanitizedConfig.skills}
                       />
                     )}
+                    {sanitizedConfig.languages.length !== 0 && (
+                      <LanguageCard
+                        loading={loading}
+                        languages={sanitizedConfig.languages}
+                      />
+                    )}
+                    {sanitizedConfig.educations.length !== 0 && (
+                      <EducationCard
+                        loading={loading}
+                        educations={sanitizedConfig.educations}
+                      />
+                    )}
                     {sanitizedConfig.experiences.length !== 0 && (
                       <ExperienceCard
                         loading={loading}
@@ -234,12 +247,6 @@ const GitProfile = ({ config }: { config: Config }) => {
                       <CertificationCard
                         loading={loading}
                         certifications={sanitizedConfig.certifications}
-                      />
-                    )}
-                    {sanitizedConfig.educations.length !== 0 && (
-                      <EducationCard
-                        loading={loading}
-                        educations={sanitizedConfig.educations}
                       />
                     )}
                   </div>

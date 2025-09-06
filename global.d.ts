@@ -218,9 +218,13 @@ interface Resume {
 interface Experience {
   company?: string;
   position?: string;
-  from: string;
-  to: string;
+  from?: string;
+  to?: string;
   companyLink?: string;
+  event?: string;
+  role?: string;
+  organization?: string;
+  year?: string;
 }
 
 interface Certification {
@@ -235,6 +239,11 @@ interface Education {
   degree?: string;
   from: string;
   to: string;
+}
+
+interface Language {
+  name: string;
+  level: string;
 }
 
 interface Publication {
@@ -383,6 +392,11 @@ interface Config {
    * Skill list
    */
   skills?: Array<string>;
+
+  /**
+   * Languages list
+   */
+  languages?: Array<Language>;
 
   /**
    * Experience list

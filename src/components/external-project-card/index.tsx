@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import LazyImage from '../lazy-image';
+import { MdInsertLink } from 'react-icons/md';
 import { ga, skeleton } from '../../utils';
 import { SanitizedExternalProject } from '../../interfaces/sanitized-config';
 
@@ -19,43 +19,33 @@ const ExternalProjectCard = ({
     for (let index = 0; index < externalProjects.length; index++) {
       array.push(
         <div className="card shadow-lg compact bg-base-100" key={index}>
-          <div className="p-8 h-full w-full">
-            <div className="flex items-center flex-col">
-              <div className="w-full">
-                <div className="flex items-start px-4">
-                  <div className="w-full">
-                    <h2>
-                      {skeleton({
-                        widthCls: 'w-32',
-                        heightCls: 'h-8',
-                        className: 'mb-2 mx-auto',
-                      })}
-                    </h2>
-                    <div className="avatar w-full h-full">
-                      <div className="w-24 h-24 mask mask-squircle mx-auto">
-                        {skeleton({
-                          widthCls: 'w-full',
-                          heightCls: 'h-full',
-                          shape: '',
-                        })}
-                      </div>
-                    </div>
-                    <div className="mt-2">
-                      {skeleton({
-                        widthCls: 'w-full',
-                        heightCls: 'h-4',
-                        className: 'mx-auto',
-                      })}
-                    </div>
-                    <div className="mt-2 flex items-center flex-wrap justify-center">
-                      {skeleton({
-                        widthCls: 'w-full',
-                        heightCls: 'h-4',
-                        className: 'mx-auto',
-                      })}
-                    </div>
-                  </div>
-                </div>
+          <div className="flex justify-between flex-col p-8 h-full w-full">
+            <div>
+              <div className="flex items-center">
+                <span>
+                  <h5 className="card-title text-lg">
+                    {skeleton({
+                      widthCls: 'w-32',
+                      heightCls: 'h-8',
+                      className: 'mb-1',
+                    })}
+                  </h5>
+                </span>
+              </div>
+              <div className="mb-5 mt-1">
+                {skeleton({
+                  widthCls: 'w-full',
+                  heightCls: 'h-4',
+                  className: 'mb-2',
+                })}
+                {skeleton({ widthCls: 'w-full', heightCls: 'h-4' })}
+              </div>
+            </div>
+            <div className="flex justify-between">
+              <div className="flex flex-grow">
+                <span className="mr-3 flex items-center">
+                  {skeleton({ widthCls: 'w-12', heightCls: 'h-4' })}
+                </span>
               </div>
             </div>
           </div>
@@ -78,7 +68,7 @@ const ExternalProjectCard = ({
           try {
             if (googleAnalyticId) {
               ga.event('Click External Project', {
-                post: item.title,
+                project: item.title,
               });
             }
           } catch (error) {
@@ -88,34 +78,20 @@ const ExternalProjectCard = ({
           window?.open(item.link, '_blank');
         }}
       >
-        <div className="p-8 h-full w-full">
-          <div className="flex items-center flex-col">
-            <div className="w-full">
-              <div className="px-4">
-                <div className="text-center w-full">
-                  <h2 className="font-medium text-center opacity-60 mb-2">
-                    {item.title}
-                  </h2>
-                  {item.imageUrl && (
-                    <div className="avatar opacity-90">
-                      <div className="w-24 h-24 mask mask-squircle">
-                        <LazyImage
-                          src={item.imageUrl}
-                          alt={'thumbnail'}
-                          placeholder={skeleton({
-                            widthCls: 'w-full',
-                            heightCls: 'h-full',
-                            shape: '',
-                          })}
-                        />
-                      </div>
-                    </div>
-                  )}
-                  <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
-                    {item.description}
-                  </p>
-                </div>
+        <div className="flex justify-between flex-col p-8 h-full w-full">
+          <div>
+            <div className="flex items-center truncate">
+              <div className="card-title text-lg tracking-wide flex text-base-content opacity-60">
+                <MdInsertLink className="my-auto" />
+                <span>{item.title}</span>
               </div>
+            </div>
+            <p className="mb-5 mt-1 text-base-content text-opacity-60 text-sm">
+              {item.description}
+            </p>
+          </div>
+          <div className="flex justify-between text-sm text-base-content text-opacity-60 truncate">
+            <div className="flex flex-grow">
             </div>
           </div>
         </div>

@@ -72,9 +72,13 @@ export interface SanitizedResume {
 export interface SanitizedExperience {
   company?: string;
   position?: string;
-  from: string;
-  to: string;
+  from?: string;
+  to?: string;
   companyLink?: string;
+  event?: string;
+  role?: string;
+  organization?: string;
+  year?: string;
 }
 
 export interface SanitizedCertification {
@@ -90,6 +94,11 @@ export interface SanitizedEducation {
   degree?: string;
   from: string;
   to: string;
+}
+
+export interface SanitizedLanguage {
+  name: string;
+  level: string;
 }
 
 export interface SanitizedPublication {
@@ -143,6 +152,7 @@ export interface SanitizedConfig {
   social: SanitizedSocial;
   resume: SanitizedResume;
   skills: Array<string>;
+  languages: Array<SanitizedLanguage>;
   experiences: Array<SanitizedExperience>;
   educations: Array<SanitizedEducation>;
   certifications: Array<SanitizedCertification>;

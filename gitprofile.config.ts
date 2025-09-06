@@ -17,23 +17,26 @@ const CONFIG = {
         },
       },
       manual: {
-        projects: ['alejandg1/Proyect_Unemi', 'alejandg1/SmartCook', 'alejandg1/Music_client', 'alejandg1/Coki'],
+        //projects: ['alejandg1/Actiometa_electron', 'alejandg1/Actiometa_api_go'],
       },
     },
-    // external: {
-    //   header: 'My Projects',
-    //   // To hide the `External Projects` section, keep it empty.
-    //   projects: [
-    //     {
-    //       title: 'Project Name',
-    //       description:
-    //         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-    //       imageUrl:
-    //         'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-    //       link: 'https://example.com',
-    //     },
-    //   ],
-    // },
+    external: {
+      header: 'Repositorios Externos',
+      projects: [
+        {
+          title: 'ActioMeta/NeoSynth',
+          description:
+            'Cliente móvil de Navidrome/Subsonic construido con React Native, Expo y TypeScript.',
+          link: 'https://github.com/ActioMeta/NeoSynth',
+        },
+        {
+          title: 'ActioMeta/ObsVersionManager',
+          description:
+            'Aplicación de escritorio desarrollada con Wails y Preact para gestionar múltiples instalaciones de OBS Studio, sus configuraciones y plugins de manera sencilla y eficiente.',
+          link: 'https://github.com/ActioMeta/OBS-version-manager',
+        },
+      ],
+    },
   },
   seo: {
     title: 'Alejandro Gómez',
@@ -46,7 +49,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/1FQ6uiClmRa_YTgtQmwh6hlAWp0PjJRKe/view?usp=sharing'
+    'https://drive.google.com/file/d/1RuoXFlMyf0gSejCwNtrbhuFU99SZ7SNX/view?usp=sharing'
   },
   skills: [
     'Linux',
@@ -58,6 +61,22 @@ const CONFIG = {
     'Docker',
     'Golang',
     'Python',
+    'Power BI',
+    'AI/ML',
+  ],
+  languages: [
+    {
+      name: 'Español',
+      level: 'Nativo',
+    },
+    {
+      name: 'Inglés',
+      level: 'Intermedio',
+    },
+    {
+      name: 'Italiano',
+      level: 'Básico',
+    },
   ],
   experiences: [
     {
@@ -65,12 +84,21 @@ const CONFIG = {
       role: 'Participante',
       year: '2024',
       organization: 'UNEMI',
+      companyLink: 'https://drive.google.com/file/d/1dA2Jm_3Na_RiCQtRpiBtSeWkqVWC8sjo/view?usp=sharing',
     },
     {
       event: 'Hackathon - Road to Hack',
       role: 'Participante',
-      year: '2025',
+      year: '2024',
       organization: 'ESPOL',
+      companyLink: 'https://drive.google.com/file/d/1x2vg-kAiOB0HERni1QHH17_Pk9_mnvuX/view?usp=sharing'
+    },
+    {
+      event: 'Innovatón 2025 Tía',
+      role: 'Participante',
+      year: '2025',
+      organization: 'Supermercados Tía',
+      companyLink: 'https://drive.google.com/file/d/15UWxXJNb43qG_OH3yNmHn3ZLwZf4EyCq/view?usp=sharing'
     }
     // {
     //   company: 'Company Name',
@@ -88,13 +116,34 @@ const CONFIG = {
       link: 'https://www.credly.com/badges/ab9d8696-7c9c-4da9-bdcd-60fc8d731bbf/public_url',
       image: '/images/aws-academy-graduate-aws-academy-introduction-to-cloud-semester-1.png'
     },
+    {
+      name: 'Curso de docker y kubernetes',
+      body: '',
+      year: '2025',
+      link: 'https://drive.google.com/file/d/1BDPVzfSwL8D5L0vSnFsFNpQI21o4aRTg/view?usp=sharing',
+      image: '/images/docker_codigo_facilito.png'
+    },
+    {
+      name: 'Curso de power bi',
+      body: '',
+      year: '2025',
+      link: 'https://drive.google.com/file/d/14NA2GodXYsTNPN1pc3G0qych5daShKw9/view?usp=sharing',
+      image: '/images/power_bi_codigo_facilito.png'
+    },
+    {
+      name : 'Curso de DevOps',
+      body: '',
+      year: '2025',
+      link: 'https://drive.google.com/file/d/19KUQEtqC4jxyWjUP80pKjQDsmWMGuJIa/view?usp=sharing',
+      image: '/images/devops_codigo_facilito.png'
+    }
   ],
   educations: [
     {
       institution: 'State University of Milagro (software engineering)',
       degree: 'Not degree',
       from: '2019',
-      to: '',
+      to: '2025',
     },
   ],
   publications: [
@@ -116,13 +165,12 @@ const CONFIG = {
   googleAnalytics: {
     // id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
-  // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
     id: '',
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'night',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -140,14 +188,9 @@ const CONFIG = {
       'light',
       'dark',
       'black',
-      'luxury',
-      'dracula',
       'night',
-      'dim',
-      'nord',
     ],
 
-    // Custom theme, applied to `procyon` theme
     customTheme: {
       primary: '#fc055b',
       secondary: '#219aaf',
@@ -158,15 +201,6 @@ const CONFIG = {
       '--rounded-btn': '3rem',
     },
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  // footer: `Made with <a 
-  //     class="text-primary" href="https://github.com/arifszn/gitprofile"
-  //     target="_blank"
-  //     rel="noreferrer"
-  //   >GitProfile</a> and ❤️`,
-  //
-  // enablePWA: true,
 };
 
 export default CONFIG;
