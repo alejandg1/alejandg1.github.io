@@ -35,6 +35,12 @@ const CONFIG = {
             'Aplicación de escritorio desarrollada con Wails y Preact para gestionar múltiples instalaciones de OBS Studio, sus configuraciones y plugins de manera sencilla y eficiente.',
           link: 'https://github.com/ActioMeta/OBS-version-manager',
         },
+        {
+          title: 'Alejandg1/ytdlp_gui',
+          description:
+            'Interfaz gráfica de usuario (GUI) para yt-dlp, una herramienta de descarga de videos desde plataformas como YouTube. Desarrollada con Tauri.',
+          link: 'https://github.com/Alejandg1/ytdlp_gui',
+        },
       ],
     },
   },
@@ -54,6 +60,7 @@ const CONFIG = {
   skills: [
     'Linux',
     'React Native',
+    'Android Development',
     'Node.js',
     'web deployment',
     'SQL',
@@ -71,7 +78,7 @@ const CONFIG = {
     },
     {
       name: 'Inglés',
-      level: 'Intermedio',
+      level: 'Intermedio B2',
     },
     {
       name: 'Italiano',
@@ -99,14 +106,14 @@ const CONFIG = {
       year: '2025',
       organization: 'Supermercados Tía',
       companyLink: 'https://drive.google.com/file/d/15UWxXJNb43qG_OH3yNmHn3ZLwZf4EyCq/view?usp=sharing'
+    },
+    {
+      event: 'Hackathon - Innovaitech',
+      role: 'Participante',
+      year: '2026',
+      organization: 'UNEMI - Misión Ecuador',
+      companyLink: 'https://drive.google.com/file/d/1dA2Jm_3Na_RiCQtRpiBtSeWkqVWC8sjo/view?usp=sharing',
     }
-    // {
-    //   company: 'Company Name',
-    //   position: 'Position',
-    //   from: 'September 2021',
-    //   to: 'Present',
-    //   companyLink: 'https://example.com',
-    // },
   ],
   certifications: [
     {
