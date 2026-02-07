@@ -41,6 +41,12 @@ const CONFIG = {
             'Interfaz gráfica de usuario (GUI) para yt-dlp, una herramienta de descarga de videos desde plataformas como YouTube. Desarrollada con Tauri.',
           link: 'https://github.com/Alejandg1/ytdlp_gui',
         },
+        {
+          title: 'Alejandg1/GopherWatch',
+          description:
+            'lightweight container monitoring tool written in Go. It provides real-time statistics for Docker containers, including CPU and memory usage.',
+          link: 'https://github.com/Alejandg1/GopherWatch',
+        },
       ],
     },
   },
@@ -55,19 +61,19 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-    'https://drive.google.com/file/d/1RuoXFlMyf0gSejCwNtrbhuFU99SZ7SNX/view?usp=sharing'
+      'https://drive.google.com/file/d/1RuoXFlMyf0gSejCwNtrbhuFU99SZ7SNX/view?usp=sharing'
   },
   skills: [
     'Linux',
     'React Native',
     'Android Development',
     'Node.js',
-    'web deployment',
-    'SQL',
+    'PostgreSQL',
     'Git',
-    'Docker',
+    'Compose',
     'Golang',
-    'Python',
+    'FastAPI',
+    'Django',
     'Power BI',
     'AI/ML',
   ],
@@ -112,7 +118,7 @@ const CONFIG = {
       role: 'Participante',
       year: '2026',
       organization: 'UNEMI - Misión Ecuador',
-      companyLink: 'https://drive.google.com/file/d/1dA2Jm_3Na_RiCQtRpiBtSeWkqVWC8sjo/view?usp=sharing',
+      companyLink: 'https://drive.google.com/file/d/15mP_njzjZ4qnLcpLyrR7weV-ioqxIyDQ/view?usp=sharing',
     }
   ],
   certifications: [
@@ -138,7 +144,7 @@ const CONFIG = {
       image: '/images/power_bi_codigo_facilito.png'
     },
     {
-      name : 'Curso de DevOps',
+      name: 'Curso de DevOps',
       body: '',
       year: '2025',
       link: 'https://drive.google.com/file/d/19KUQEtqC4jxyWjUP80pKjQDsmWMGuJIa/view?usp=sharing',
