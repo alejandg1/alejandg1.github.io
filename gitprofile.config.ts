@@ -17,16 +17,15 @@ const CONFIG = {
         },
       },
       manual: {
-        //projects: ['alejandg1/Actiometa_electron', 'alejandg1/Actiometa_api_go'],
+        // projects: ['alejandg1/GopherWatch'],
       },
     },
     external: {
-      header: 'Repositorios Externos',
+      header: 'Repositories Destacados',
       projects: [
         {
           title: 'ActioMeta/NeoSynth',
-          description:
-            'Cliente móvil de Navidrome/Subsonic construido con React Native, Expo y TypeScript.',
+          description: 'Modern music client for Android that connects to Navidrome and Subsonic servers.',
           link: 'https://github.com/ActioMeta/NeoSynth',
         },
         {
@@ -36,10 +35,10 @@ const CONFIG = {
           link: 'https://github.com/ActioMeta/OBS-version-manager',
         },
         {
-          title: 'Alejandg1/ytdlp_gui',
+          title: 'ActioMeta/ytdlp_gui',
           description:
-            'Interfaz gráfica de usuario (GUI) para yt-dlp, una herramienta de descarga de videos desde plataformas como YouTube. Desarrollada con Tauri.',
-          link: 'https://github.com/Alejandg1/ytdlp_gui',
+            'Aplicación de escritorio multiplataforma para descargar videos usando yt-dlp y ffmpeg',
+          link: 'https://github.com/ActioMeta/Actiometa.ytdlp.Downloader',
         },
         {
           title: 'Alejandg1/GopherWatch',
@@ -61,7 +60,7 @@ const CONFIG = {
   },
   resume: {
     fileUrl:
-      'https://drive.google.com/file/d/1RuoXFlMyf0gSejCwNtrbhuFU99SZ7SNX/view?usp=sharing'
+      'https://drive.google.com/file/d/1SHAKtpst2HqjtHu664b8JQi8BVmbf7yL/view?usp=sharing'
   },
   skills: [
     'Linux',
@@ -75,6 +74,7 @@ const CONFIG = {
     'FastAPI',
     'Django',
     'Power BI',
+    '.Net',
     'AI/ML',
   ],
   languages: [
@@ -84,11 +84,7 @@ const CONFIG = {
     },
     {
       name: 'Inglés',
-      level: 'Intermedio B2',
-    },
-    {
-      name: 'Italiano',
-      level: 'Básico',
+      level: 'Intermedio',
     },
   ],
   experiences: [
@@ -153,8 +149,8 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'State University of Milagro (software engineering)',
-      degree: 'Not degree',
+      institution: 'State University of Milagro',
+      degree: 'B.S. in Software Engineering',
       from: '2019',
       to: '2025',
     },
@@ -200,7 +196,6 @@ const CONFIG = {
     themes: [
       'light',
       'dark',
-      'black',
       'night',
     ],
 
